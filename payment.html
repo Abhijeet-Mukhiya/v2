@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment | GoRide Nepal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            <span>GoRide Nepal</span>
+        </div>
+
+    </header>
+
+    <section class="payment-page">
+
+        <h1>Select Payment Method</h1>
+
+        <div class="payment-grid">
+
+            <div class="payment-card">
+
+                <img src="images/esewa.png" alt="eSewa">
+
+                <h3>eSewa</h3>
+
+                <button onclick="selectPayment('eSewa')">
+
+                    Pay with eSewa
+
+                </button>
+
+            </div>
+
+            <div class="payment-card">
+
+                <img src="images/khalti.png" alt="Khalti">
+
+                <h3>Khalti</h3>
+
+                <button onclick="selectPayment('Khalti')">
+
+                    Pay with Khalti
+
+                </button>
+
+            </div>
+
+            <div class="payment-card">
+
+                <img src="images/fonepay.png" alt="Fonepay">
+
+                <h3>Fonepay</h3>
+
+                <button onclick="selectPayment('Fonepay')">
+
+                    Pay with Fonepay
+
+                </button>
+
+            </div>
+
+            <div class="payment-card">
+
+                <i class="fa-solid fa-money-bill-wave fa-4x"></i>
+
+                <h3>Cash on Pickup</h3>
+
+                <button onclick="selectPayment('Cash on Pickup')">
+
+                    Choose Cash
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="payment.js"></script>
+
+</body>
+
+</html>

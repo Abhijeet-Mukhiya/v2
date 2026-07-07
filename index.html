@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoRide Nepal | Premium Vehicle Rental</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-car-side"></i>
+        <span>GoRide Nepal</span>
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="nav-right">
+
+        <button id="darkModeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="login.html" class="login-btn">Login</a>
+
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<!-- <section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Drive Anywhere Across Nepal</h1>
+
+        <p>
+            Rent Cars, Bikes, Scooters and Jeeps at the best prices.
+            Safe, Affordable and Fast Booking.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="vehicles.html" class="primary-btn">
+                Explore Vehicles
+            </a>
+
+            <a href="booking.html" class="secondary-btn">
+                Book Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section> -->
+<section class="hero">
+
+    <div class="hero-slide active"
+        style="background-image:url('images/hero1.jpg');">
+
+        <div class="hero-content">
+            <h1>Drive Your Dream Vehicle</h1>
+            <p>Book Cars, Bikes & Scooters Anywhere in Nepal.</p>
+
+            <a href="vehicles.html" class="primary-btn">
+                Explore Vehicles
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-slide"
+        style="background-image:url('images/hero2.jpg');">
+
+        <div class="hero-content">
+            <h1>Affordable Rentals</h1>
+            <p>Safe • Reliable • Affordable</p>
+        </div>
+
+    </div>
+
+    <div class="hero-slide"
+        style="background-image:url('images/hero3.jpg');">
+
+        <div class="hero-content">
+            <h1>Travel Nepal Comfortably</h1>
+            <p>Premium vehicles for every journey.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <h2>Find Your Vehicle</h2>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search vehicle...">
+
+        <select id="category">
+
+            <option value="">All Types</option>
+            <option>Car</option>
+            <option>Bike</option>
+            <option>Scooter</option>
+            <option>Jeep</option>
+
+        </select>
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED VEHICLES ================= -->
+
+<section class="featured">
+
+    <h2>Featured Vehicles</h2>
+
+    <div class="vehicle-container" id="vehicleContainer">
+
+        <!-- JS Loads Vehicle Cards -->
+
+    </div>
+
+</section>
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us">
+
+    <h2>Why Choose GoRide Nepal?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Safe Vehicles</h3>
+
+            <p>
+                Fully inspected and maintained.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Affordable Price</h3>
+
+            <p>
+                Best rental rates in Nepal.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>24/7 Support</h3>
+
+            <p>
+                Always ready to help.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Instant Booking</h3>
+
+            <p>
+                Book within seconds.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>GoRide Nepal</h2>
+
+        <p>
+            Premium Vehicle Rental Service
+        </p>
+
+        <div class="social">
+
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 GoRide Nepal. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= JS ================= -->
+
+<script src="app.js"></script>
+<script src="darkmode.js"></script>
+<script src="vehicles.js"></script>
+<script src="slider.js"></script>
+
+</body>
+</html>

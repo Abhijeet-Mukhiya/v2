@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles | GoRide Nepal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vehicles.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-car-side"></i>
+        <span>GoRide Nepal</span>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicles.html" class="active">Vehicles</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-right">
+        <button id="darkModeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+
+</header>
+
+<section class="vehicle-page">
+
+    <h1>Explore Our Vehicles</h1>
+
+    <p>
+        Choose from premium Cars, Bikes, Scooters and Jeeps.
+    </p>
+
+    <div class="filter-area">
+
+        <input
+        type="text"
+        id="vehicleSearch"
+        placeholder="Search vehicles...">
+
+        <select id="vehicleCategory">
+
+            <option value="All">All Vehicles</option>
+            <option value="Car">Cars</option>
+            <option value="Bike">Bikes</option>
+            <option value="Scooter">Scooters</option>
+            <option value="Jeep">Jeeps</option>
+
+        </select>
+
+    </div>
+
+    <div id="vehicleGrid" class="vehicle-grid">
+
+        <!-- JavaScript loads cards -->
+
+    </div>
+
+</section>
+
+<!-- Vehicle Details Popup -->
+
+<div id="vehicleModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<script src="vehicles.js"></script>
+<script src="wishlist.js"></script>
+<script src="darkmode.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Receipt | GoRide Nepal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="receipt.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            <span>GoRide Nepal</span>
+        </div>
+
+    </header>
+
+    <section class="receipt-page">
+
+        <div class="receipt-card">
+
+            <h1>Booking Receipt</h1>
+
+            <p>Thank you for choosing <strong>GoRide Nepal</strong>.</p>
+
+            <hr>
+
+            <div id="receiptContent">
+                Loading receipt...
+            </div>
+
+            <div class="receipt-buttons">
+
+                <button onclick="window.print()">
+                    <i class="fa-solid fa-print"></i>
+                    Print Receipt
+                </button>
+
+                <a href="index.html">
+                    <button>
+                        <i class="fa-solid fa-house"></i>
+                        Back to Home
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const receipt = JSON.parse(localStorage.getItem("bookingReceipt"));
+
+        const receiptContent = document.getElementById("receiptContent");
+
+        if (receipt) {
+
+            receiptContent.innerHTML = `
+
+<h2>${receipt.vehicle}</h2>
+
+<p><strong>Pickup Date:</strong> ${receipt.pickup}</p>
+
+<p><strong>Return Date:</strong> ${receipt.return}</p>
+
+<p><strong>${receipt.total}</strong></p>
+<p><strong>Payment Method:</strong> ${receipt.paymentMethod || "Not Selected"}</p>
+<p><strong>Payment Status:</strong> ${receipt.paymentStatus || "Pending"}</p>
+
+<p style="margin-top:20px;color:green;">
+Booking Confirmed Successfully! Thank you for choosing GoRide Nepal.
+</p>
+
+`;
+
+        } else {
+
+            receiptContent.innerHTML = "<h2>No booking found.</h2>";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

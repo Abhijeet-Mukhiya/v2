@@ -1,0 +1,112 @@
+/* ==================================
+   GoRide Nepal - receipt.css
+================================== */
+
+.receipt-page{
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:#f5f7fb;
+}
+
+.receipt-card{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.receipt-card h1{
+    text-align:center;
+    color:#0066ff;
+    margin-bottom:15px;
+}
+
+.receipt-card p{
+    line-height:1.8;
+}
+
+.receipt-card hr{
+    margin:20px 0;
+}
+
+#receiptContent h2{
+    margin-bottom:15px;
+}
+
+.receipt-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.receipt-buttons button{
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    background:#0066ff;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.receipt-buttons button:hover{
+    transform:translateY(-2px);
+}
+
+.receipt-buttons a{
+    text-decoration:none;
+}
+
+body.dark .receipt-page{
+    background:#121212;
+}
+
+body.dark .receipt-card{
+    background:#222;
+    color:#fff;
+}
+
+@media print{
+
+.header,
+.receipt-buttons{
+    display:none;
+}
+
+.receipt-page{
+    background:#fff;
+    padding:0;
+}
+
+.receipt-card{
+    box-shadow:none;
+    border:none;
+    max-width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.receipt-card{
+    padding:25px;
+}
+
+.receipt-card h1{
+    font-size:28px;
+}
+
+.receipt-buttons button{
+    width:100%;
+}
+
+}

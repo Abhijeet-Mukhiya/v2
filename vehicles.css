@@ -1,0 +1,148 @@
+/* ===============================
+   GoRide Nepal - vehicles.css
+================================ */
+
+.vehicle-page{
+    padding:80px 8%;
+}
+
+.vehicle-page h1{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.vehicle-page p{
+    text-align:center;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.filter-area{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.filter-area input,
+.filter-area select{
+    width:280px;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.vehicle-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.vehicle-item{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.vehicle-item:hover{
+    transform:translateY(-8px);
+}
+
+.vehicle-item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.vehicle-info{
+    padding:20px;
+}
+
+.vehicle-info h3{
+    margin-bottom:10px;
+}
+
+.vehicle-price{
+    color:#0066ff;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.vehicle-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.vehicle-buttons button{
+    flex:1;
+    border:none;
+    cursor:pointer;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.details-btn{
+    background:#0066ff;
+    color:#fff;
+}
+
+.wishlist-btn{
+    background:#ff4d6d;
+    color:#fff;
+}
+
+/* Popup */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:9999;
+}
+
+.modal-content{
+    width:90%;
+    max-width:700px;
+    background:#fff;
+    margin:60px auto;
+    border-radius:15px;
+    padding:25px;
+    position:relative;
+}
+
+#closeModal{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+body.dark .vehicle-item,
+body.dark .modal-content{
+    background:#222;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+.vehicle-page h1{
+    font-size:30px;
+}
+
+.filter-area input,
+.filter-area select{
+    width:100%;
+}
+
+}

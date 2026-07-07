@@ -1,0 +1,109 @@
+/* ==================================
+   GoRide Nepal - dashboard.css
+================================== */
+
+.dashboard{
+    padding:80px 8%;
+    min-height:80vh;
+    background:#f5f7fb;
+}
+
+.dashboard h1{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+    color:#0066ff;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.dashboard-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h2{
+    margin-bottom:20px;
+    color:#0066ff;
+    border-bottom:2px solid #eee;
+    padding-bottom:10px;
+}
+
+.dashboard-card p{
+    margin:10px 0;
+    line-height:1.7;
+}
+
+.profile-item,
+.booking-item,
+.wishlist-item{
+    padding:12px;
+    border-bottom:1px solid #eee;
+}
+
+.wishlist-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.remove-btn{
+    background:#ff4d4d;
+    color:#fff;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.remove-btn:hover{
+    background:#d63031;
+}
+
+body.dark .dashboard{
+    background:#121212;
+}
+
+body.dark .dashboard-card{
+    background:#222;
+    color:#fff;
+}
+
+body.dark .dashboard-card h2{
+    color:#4da3ff;
+    border-bottom-color:#444;
+}
+
+body.dark .profile-item,
+body.dark .booking-item,
+body.dark .wishlist-item{
+    border-bottom:1px solid #444;
+}
+
+@media(max-width:768px){
+
+.dashboard{
+    padding:60px 20px;
+}
+
+.dashboard h1{
+    font-size:30px;
+}
+
+.dashboard-grid{
+    grid-template-columns:1fr;
+}
+
+}
